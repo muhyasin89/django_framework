@@ -76,6 +76,11 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "django_form_wizard_lab.users.apps.UsersConfig",
     # Your stuff: custom apps go here
+    "formtools",
+    "django_form_wizard_lab.teacher",
+    "django_form_wizard_lab.class",
+    "django_form_wizard_lab.student",
+    "django_form_wizard_lab.subject"
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
