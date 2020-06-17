@@ -1,9 +1,9 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
-from autoslug import AutoSlugField
-
 from model_utils.models import TimeStampedModel
+
+from autoslug import AutoSlugField
 
 class Subject(TimeStampedModel):
     name =  models.CharField(_("Subject"), max_length=255)
