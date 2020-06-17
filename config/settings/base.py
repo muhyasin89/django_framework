@@ -81,6 +81,7 @@ LOCAL_APPS = [
     "django_form_wizard_lab.classes",
     "django_form_wizard_lab.place",
     "django_form_wizard_lab.student",
+    "django_form_wizard_lab.schedule",
     "django_form_wizard_lab.subject"
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

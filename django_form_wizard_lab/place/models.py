@@ -5,6 +5,8 @@ from model_utils.models import TimeStampedModel
 
 from autoslug import AutoSlugField
 
+from django_form_wizard_lab.classes.models import Classes
+
 
 class Place(TimeStampedModel):
     name =  models.CharField(_("Classes"), max_length=255)
@@ -14,6 +16,7 @@ class Place(TimeStampedModel):
 
     building = models.CharField(_("Building"), max_length=255)
 
+    classes = models.ForeignKey(Classes, on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = _("place")
