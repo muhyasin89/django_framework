@@ -78,7 +78,8 @@ LOCAL_APPS = [
     # Your stuff: custom apps go here
     "formtools",
     "django_form_wizard_lab.teacher",
-    "django_form_wizard_lab.class",
+    "django_form_wizard_lab.classes",
+    "django_form_wizard_lab.place",
     "django_form_wizard_lab.student",
     "django_form_wizard_lab.subject"
 ]

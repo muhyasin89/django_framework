@@ -13,3 +13,8 @@ class Student(TimeStampedModel):
     address = models.CharField(_("Address"), max_length=255)
 
     age = models.IntegerField()
+
+
+    class Meta:
+        verbose_name = _("student")
+        verbose_name_plural = _("students")

@@ -13,3 +13,8 @@ class Place(TimeStampedModel):
     floor = models.IntegerField()
 
     building = models.CharField(_("Building"), max_length=255)
+
+
+    class Meta:
+        verbose_name = _("place")
+        verbose_name_plural = _("places")
