@@ -12,4 +12,4 @@ class ScheduleForm(forms.ModelForm):
 
     class Meta:
         model = Schedule
-        fields = ['classes', 'tanggal', 'time_start', 'time_end']
+        fields = ['classes', 'tanggal', 'time_start', 'time_finish']

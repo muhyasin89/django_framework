@@ -1,6 +1,6 @@
 from django import forms
 
-from django.utils.translation import ugettext_lazy as 
+from django.utils.translation import ugettext_lazy as _
 
 from django_form_wizard_lab.teacher.models import Teacher
 

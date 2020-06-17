@@ -7,6 +7,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
+    path("wizard/", include("django_form_wizard_lab.wizard.urls", namespace="wizard")),
     path(
         "about/", TemplateView.as_view(template_name="pages/about.html"), name="about"
     ),
