@@ -8,6 +8,11 @@ Refference
 ## form wizard
   1. https://swapps.com/blog/how-to-do-a-wizard-form/
   2. https://www.tivix.com/blog/django-form-wizard
+  
+  
+## formset
+  1. https://medium.com/all-about-django/adding-forms-dynamically-to-a-django-formset-375f1090c2b0
+  2. https://github.com/elo80ka/django-dynamic-formset
 
 
 ## elasticsearch
