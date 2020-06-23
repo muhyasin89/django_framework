@@ -13,6 +13,10 @@ Refference
 ## formset
   1. https://medium.com/all-about-django/adding-forms-dynamically-to-a-django-formset-375f1090c2b0
   2. https://github.com/elo80ka/django-dynamic-formset
+  
+  passing information within formset step
+  ---------------------------------------
+  1. http://blog.hayleyanderson.us/2015/07/26/passing-information-between-django-form-wizard-steps/
 
 
 ## elasticsearch
