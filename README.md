@@ -2,6 +2,12 @@
 This is for experimenting inside django framework
 
 
+Case Studies
+------------
+ # formset
+ 1. create form wizard with dynamic formset
+ 2. create formset with autocomplete forwarding using javascript
+
 Refference
 -----------
 
@@ -27,3 +33,7 @@ Refference
   3. https://medium.com/@harshvb7/managing-elasticsearch-in-django-like-a-pro-adfcd984920d
   4. https://github.com/sabricot/django-elasticsearch-dsl
   5. https://pypi.org/project/elasticsearch-django/
+
+
+## autocomplete
+1. https://django-autocomplete-light.readthedocs.io/en/master/tutorial.html
