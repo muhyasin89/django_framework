@@ -42,3 +42,7 @@ Refference
 ### payment gateway
 1. https://medium.com/@MicroPyramid/django-payu-payment-gateway-integration-81b8d03b38ae
 2. https://midtrans.com/
+
+
+### maps
+1. https://www.fullstackpython.com/blog/maps-django-web-applications-projects-mapbox.html
