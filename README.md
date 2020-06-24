@@ -37,3 +37,8 @@ Refference
 
 ## autocomplete
 1. https://django-autocomplete-light.readthedocs.io/en/master/tutorial.html
+
+
+### payment gateway
+1. https://medium.com/@MicroPyramid/django-payu-payment-gateway-integration-81b8d03b38ae
+2. https://midtrans.com/
