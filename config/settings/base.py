@@ -42,7 +42,7 @@ LOCALE_PATHS = [str(ROOT_DIR / "locale")]
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 DATABASES = {
-    "default": env.db("DATABASE_URL", default="postgres:///django_form_wizard_lab")
+    "default": env.db("DATABASE_URL", default="sqlite3:///django_form_wizard_lab")
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 

@@ -17,3 +17,6 @@ django-redis==4.11.0  # https://github.com/jazzband/django-redis
 
 django-formtools==2.1
 django-autoslug==1.9.6
+
+django-rest-framework 
+django-rest-auth 
