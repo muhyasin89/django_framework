@@ -5,7 +5,7 @@ from model_utils.models import TimeStampedModel
 
 from autoslug import AutoSlugField
 
-from django_form_wizard_lab.subject.models import Subject
+from online_learning.subject.models import Subject
 
 
 class Classes(TimeStampedModel):

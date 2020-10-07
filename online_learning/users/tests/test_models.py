@@ -1,6 +1,6 @@
 import pytest
 
-from django_form_wizard_lab.users.models import User
+from online_learning.users.models import User
 
 pytestmark = pytest.mark.django_db
 

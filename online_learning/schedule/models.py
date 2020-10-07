@@ -3,7 +3,7 @@ from django.utils.translation import ugettext_lazy as _
 
 from model_utils.models import TimeStampedModel
 
-from django_form_wizard_lab.classes.models import Classes
+from online_learning.classes.models import Classes
 
 
 class Schedule(TimeStampedModel):

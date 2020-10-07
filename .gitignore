@@ -279,7 +279,7 @@ pip-selfcheck.json
 
 ### Project template
 
-django_form_wizard_lab/media/
+online_learning/media/
 
 .pytest_cache/
 

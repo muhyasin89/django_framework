@@ -5,7 +5,7 @@ from model_utils.models import TimeStampedModel
 
 from autoslug import AutoSlugField
 
-from django_form_wizard_lab.classes.models import Classes
+from online_learning.classes.models import Classes
 
 
 class Place(TimeStampedModel):

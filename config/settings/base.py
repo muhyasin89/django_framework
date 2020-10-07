@@ -6,8 +6,8 @@ from pathlib import Path
 import environ
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
-# django_form_wizard_lab/
-APPS_DIR = ROOT_DIR / "django_form_wizard_lab"
+# online_learning/
+APPS_DIR = ROOT_DIR / "online_learning"
 env = environ.Env()
 
 READ_DOT_ENV_FILE = env.bool("DJANGO_READ_DOT_ENV_FILE", default=False)
@@ -42,7 +42,7 @@ LOCALE_PATHS = [str(ROOT_DIR / "locale")]
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 DATABASES = {
-    "default": env.db("DATABASE_URL", default="sqlite3:///django_form_wizard_lab")
+    "default": env.db("DATABASE_URL", default="sqlite3:///online_learning")
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
@@ -74,15 +74,15 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    "django_form_wizard_lab.users.apps.UsersConfig",
+    "online_learning.users.apps.UsersConfig",
     # Your stuff: custom apps go here
     "formtools",
-    "django_form_wizard_lab.teacher",
-    "django_form_wizard_lab.classes",
-    "django_form_wizard_lab.place",
-    "django_form_wizard_lab.student",
-    "django_form_wizard_lab.schedule",
-    "django_form_wizard_lab.subject"
+    "online_learning.teacher",
+    "online_learning.classes",
+    "online_learning.place",
+    "online_learning.student",
+    "online_learning.schedule",
+    "online_learning.subject"
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -90,7 +90,7 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 # MIGRATIONS
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#migration-modules
-MIGRATION_MODULES = {"sites": "django_form_wizard_lab.contrib.sites.migrations"}
+MIGRATION_MODULES = {"sites": "online_learning.contrib.sites.migrations"}
 
 # AUTHENTICATION
 # ------------------------------------------------------------------------------
@@ -189,7 +189,7 @@ TEMPLATES = [
                 "django.template.context_processors.static",
                 "django.template.context_processors.tz",
                 "django.contrib.messages.context_processors.messages",
-                "django_form_wizard_lab.utils.context_processors.settings_context",
+                "online_learning.utils.context_processors.settings_context",
             ],
         },
     }
@@ -270,9 +270,9 @@ ACCOUNT_EMAIL_REQUIRED = True
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-ACCOUNT_ADAPTER = "django_form_wizard_lab.users.adapters.AccountAdapter"
+ACCOUNT_ADAPTER = "online_learning.users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-SOCIALACCOUNT_ADAPTER = "django_form_wizard_lab.users.adapters.SocialAccountAdapter"
+SOCIALACCOUNT_ADAPTER = "online_learning.users.adapters.SocialAccountAdapter"
 
 
 # Your stuff...

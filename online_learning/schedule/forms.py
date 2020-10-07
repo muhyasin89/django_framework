@@ -2,9 +2,9 @@ from django import forms
 
 from django.utils.translation import ugettext_lazy as _
 
-from django_form_wizard_lab.schedule.models import Schedule
+from online_learning.schedule.models import Schedule
 
-from django_form_wizard_lab.classes.models import Classes
+from online_learning.classes.models import Classes
 
 
 class ScheduleForm(forms.ModelForm):

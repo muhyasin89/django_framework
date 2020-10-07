@@ -1,7 +1,7 @@
 import pytest
 from django.urls import resolve, reverse
 
-from django_form_wizard_lab.users.models import User
+from online_learning.users.models import User
 
 pytestmark = pytest.mark.django_db
 

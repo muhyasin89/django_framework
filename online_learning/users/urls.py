@@ -1,6 +1,6 @@
 from django.urls import path
 
-from django_form_wizard_lab.users.views import (
+from online_learning.users.views import (
     user_detail_view,
     user_redirect_view,
     user_update_view,

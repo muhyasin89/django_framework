@@ -42,7 +42,7 @@ Running type checks with mypy:
 
 ::
 
-  $ mypy django_form_wizard_lab
+  $ mypy online_learning
 
 Test coverage
 ^^^^^^^^^^^^^

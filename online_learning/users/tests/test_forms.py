@@ -1,7 +1,7 @@
 import pytest
 
-from django_form_wizard_lab.users.forms import UserCreationForm
-from django_form_wizard_lab.users.tests.factories import UserFactory
+from online_learning.users.forms import UserCreationForm
+from online_learning.users.tests.factories import UserFactory
 
 pytestmark = pytest.mark.django_db
 
