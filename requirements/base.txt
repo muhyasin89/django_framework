@@ -21,4 +21,5 @@ django-autoslug==1.9.6
 django-rest-framework 
 django-rest-auth 
 django-debug-toolbar
-django-extension
+django-extensions
+django-phonenumber-field

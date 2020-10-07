@@ -2,18 +2,17 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
 from model_utils.models import TimeStampedModel
+from online_learning.users.models import User
 
 from autoslug import AutoSlugField
 
+import uuid
 
 class Teacher(TimeStampedModel):
-    name = models.CharField(_("Classes"), max_length=255)
-    slug = AutoSlugField(populate_from='name')
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
-    address = models.CharField(_("Address"), max_length=255)
-    
-    years_of_experience = models.IntegerField()
-
+    code = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
+    goal = models.TextField()
 
     class Meta:
         verbose_name = _("teacher")

@@ -6,8 +6,9 @@ from model_utils.models import TimeStampedModel
 from autoslug import AutoSlugField
 
 class Subject(TimeStampedModel):
-    name =  models.CharField(_("Subject"), max_length=255)
-    slug = AutoSlugField(populate_from='name')
+    title =  models.CharField(_("Subject"), max_length=255)
+    slug = AutoSlugField(populate_from='title')
+    description = models.TextField()
     number_sks = models.IntegerField()
 
 

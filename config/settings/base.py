@@ -42,7 +42,10 @@ LOCALE_PATHS = [str(ROOT_DIR / "locale")]
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 DATABASES = {
-    "default": env.db("DATABASE_URL", default="sqlite3:///online_learning")
+    "default": {
+        'URL' : env.db("DATABASE_URL", default="sqlite3:///online_learning"),
+        'ENGINE': 'django.db.backends.sqlite3'
+    }
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
@@ -74,6 +77,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
+    "phonenumber_field",
     "online_learning.users.apps.UsersConfig",
     # Your stuff: custom apps go here
     "formtools",
@@ -82,7 +86,7 @@ LOCAL_APPS = [
     "online_learning.place",
     "online_learning.student",
     "online_learning.schedule",
-    "online_learning.subject"
+    "online_learning.subject",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
