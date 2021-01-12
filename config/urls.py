@@ -15,6 +15,8 @@ urlpatterns = [
     # User management
     path("users/", include("django_form_wizard_lab.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
+    path('graphql', GraphQLView.as_view(graphiql=True)),
+
     # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

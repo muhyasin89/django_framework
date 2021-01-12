@@ -82,7 +82,8 @@ LOCAL_APPS = [
     "django_form_wizard_lab.place",
     "django_form_wizard_lab.student",
     "django_form_wizard_lab.schedule",
-    "django_form_wizard_lab.subject"
+    "django_form_wizard_lab.subject",
+    'graphene_django',
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -277,3 +278,6 @@ SOCIALACCOUNT_ADAPTER = "django_form_wizard_lab.users.adapters.SocialAccountAdap
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+GRAPHENE = {
+    'SCHEMA': 'app.schema.schema' # Where your Graphene schema lives
+}
