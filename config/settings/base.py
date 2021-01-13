@@ -69,8 +69,8 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = [
     "crispy_forms",
     "allauth",
-    "allauth.account",
-    "allauth.socialaccount",
+    # "allauth.account",
+    # "allauth.socialaccount",
 
     'graphene_django',
     'django_countries',
@@ -90,7 +90,7 @@ LOCAL_APPS = [
     "django_form_wizard_lab.schedule",
     "django_form_wizard_lab.subject",
     
-
+    'saleor.account',
     'saleor.core',
     'saleor.checkout',
     'saleor.order',

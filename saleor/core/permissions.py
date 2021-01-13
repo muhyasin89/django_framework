@@ -9,6 +9,11 @@ class BasePermissionEnum(Enum):
     def codename(self):
         return self.value.split(".")[1]
 
+class AccountPermissions(BasePermissionEnum):
+    MANAGE_USERS = "account.manage_users"
+    MANAGE_STAFF = "account.manage_staff"
+    MANAGE_SERVICE_ACCOUNTS = "app.manage_apps"
+
 
 class DiscountPermissions(BasePermissionEnum):
     MANAGE_DISCOUNTS = "discount.manage_discounts"
@@ -41,6 +46,7 @@ class ShippingPermissions(BasePermissionEnum):
 
 
 PERMISSIONS_ENUMS = [
+    AccountPermissions,
     DiscountPermissions,
     GiftcardPermissions,
     OrderPermissions,
