@@ -89,14 +89,6 @@ LOCAL_APPS = [
     "django_form_wizard_lab.student",
     "django_form_wizard_lab.schedule",
     "django_form_wizard_lab.subject",
-    
-    'saleor.account',
-    'saleor.core',
-    'saleor.checkout',
-    'saleor.order',
-    'saleor.payment',
-    'saleor.products',
-    'saleor.shipping'
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
